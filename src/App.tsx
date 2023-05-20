@@ -64,7 +64,7 @@ const App = () => {
             x={char.x} 
             y={char.y} 
             side={char.side} 
-            style={false}
+            style
           /> {/** 480x480 = 16x16, ou seja, x={0-15} */}
           <Character 
             x={char2.x} 
