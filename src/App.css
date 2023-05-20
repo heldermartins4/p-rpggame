@@ -6,4 +6,9 @@
 
 body {
   font-family: Arial;
+  background: #141237;
+
+  @media (max-width: 980px) {
+    background: #272727;
+  }
 }

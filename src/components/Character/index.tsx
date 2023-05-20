@@ -5,10 +5,11 @@ type Props = {
     x: number;
     y: number;
     side: CharacterSides;
+    style?: boolean;
 }
 
 
-export const Character = ({x, y, side}: Props) => {
+export const Character = ({x, y, side, style=false}: Props) => {
 
     const size = 30;
     const sides ={
@@ -24,6 +25,7 @@ export const Character = ({x, y, side}: Props) => {
             left={x * size} 
             top={y * size}
             sidePos={sides[side] ?? 0}
+            appear={style}
         >
         </C.Container>
     );
